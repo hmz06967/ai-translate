@@ -10,8 +10,8 @@ import requests
 import time
 
 # API Ayarları (düzeltme yapabilirsiniz)
-API_URL = "http://192.168.56.1:80/v1/chat/completions"  # LM Studio'nun çalıştığı endpoint
-MODEL_NAME = "jan-v3-4b-base-instruct"         # Model adı, örnek olarak belirtilmiştir
+API_URL = "http://192.168.x.x:1234/v1/chat/completions"  # LM Studio'nun çalıştığı endpoint
+MODEL_NAME = "*"         # Model adı, örnek olarak belirtilmiştir
 APP_NAME=  "LM Studio API ile Çeviri"
 
 class ApiWorker(QObject):
@@ -243,3 +243,4 @@ if __name__ == "__main__":
     window = LMStudioChatApp()
     window.show()
     sys.exit(app.exec())
+
